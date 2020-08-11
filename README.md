@@ -20,6 +20,6 @@ For convenience, `nccurl.sh` is used to shorten user input. First, sign in as th
 
 `./nccurl.sh signin '{"email": "admin@admin.com", "passwd": "admin"}' | python -m json.tool`
 
-Using the access token returned, use the following command to query the databse:
+Using the access token returned, use the following command to query the database:
 
 `./nccurl.sh ask/sync '{"acsTok": "[ACCESS_TOKEN]", "txt": "[QUERY]", "mdlId": "sql.model.id"}' | python -m json.tool`
